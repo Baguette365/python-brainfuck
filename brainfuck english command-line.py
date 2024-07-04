@@ -10,7 +10,7 @@ def compile():
     print(memory)
     for i in range(len(braincode)):
         if braincode[i]==',':
-            memory[position]=ord(i+1)
+            memory[position]=ord(braincode[i+1])
         else:
             if braincode[i]=='+':
                 memory[position]+=1
